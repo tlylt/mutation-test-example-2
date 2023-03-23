@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>PasteArgsParser.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package sg.edu.nus.comp.cs4218.impl.parser;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class PasteArgsParser extends ArgsParser {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final static char FLAG_IS_SERIAL = &#39;s&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public PasteArgsParser() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        legalFlags.add(FLAG_IS_SERIAL);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Boolean isSerial() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_15'>2</a>
+<span>
+1. isSerial : replaced Boolean return with False for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::isSerial &rarr; KILLED<br/>
+2. isSerial : replaced Boolean return with True for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::isSerial &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return flags.contains(FLAG_IS_SERIAL);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;String&#62; getArgs() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_19'/>
+19
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_19'>1</a>
+<span>
+1. getArgs : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::getArgs &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>        return nonFlagArgs;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@79091c84_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79091c84_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isSerial<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinFlag_DisplaysNonParallelStdinContents()]</span></span> replaced Boolean return with False for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::isSerial &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isSerial<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinNoFlag_DisplaysStdinContents()]</span></span> replaced Boolean return with True for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::isSerial &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@79091c84_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@79091c84_19'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getArgs<br/><b>Killed by : </b>none</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/PasteArgsParser::getArgs &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinFlag_DisplaysNonParallelStdinContents()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:twoPipes_PasteInvalidUniqSort_ThrowsException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinDashFlag_DisplaysNonParallelStdinContents()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleEmptyStdinFlag_DisplaysEmpty()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_MultipleFilesFlag_DisplaysNonParallelMergedFileContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_DirectoryNoFlag_ThrowsException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleFileNoFlag_DisplaysFileContents()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_SingleFileWithMultipleStdin_ReturnsMergedFile()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_SingleFileWithSingleStdinSerial_ReturnsMergedFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:twoPipes_PasteUniqSort_ReturnSortedUniqMergedContent()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_MultipleFilesNoFlag_DisplaysMergedFileContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleEmptyFileNoFlag_DisplaysEmpty()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinDashNoFlag_DisplaysStdinContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleFileSingleStdinDashNoFlag_DisplaysNonParallelMergedFileStdinContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:pipeSeq_PasteUniqSort_ReturnSortedUniqMergedContent()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinNonexistentFileNoFlag_ThrowsException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqPipe_CpPasteUniq_ReturnUniqMergedContent()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinNoFlag_DisplaysStdinContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:pastePipeUniq_validPasteWithFlagPipeUniqWithAllFlags_pasteContentAndGetUniq()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:pipeCommandSub_PasteLsInvalidSort_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_MergeTwoFiles_ReturnsMergedFile()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinDashSingleFileNoFlag_DisplaysMergedStdinFileContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleFileFlag_DisplaysNonParallelFileContents()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:pastePipeUniq_validPastePipeUniq_pasteContentAndGetUniq()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:pipeSeq_PasteUniqInvalidSort_OutputSortExceptionMsg()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:pastePipeUniqCdMv_validPastePipeUniqCdMv_PasteContentIntoOutputFileAndMoveOutputFileIntoNewDir()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_MultipleEmptyFilesNoFlag_DisplaysEmpty()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_EmptyStdin_ReturnsResult()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleEmptyStdinNoFlag_DisplaysEmpty()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqPipe_CpInvalidPasteAndUniq_OutputPasteExceptionMsg()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:pastePipeUniq_PastePipeInvalidUniq_pasteContentAndGetUniq()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_MergeTwoFilesSerial_ReturnsMergedFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:pipeCommandSub_PasteLsSort_ReturnSortedMergeContent()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_SingleStdinDirectoryNoFlag_ThrowsException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationTest]/[method:run_SingleFileWithSingleStdin_ReturnsMergedFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.PasteApplicationPublicIT]/[method:run_NonexistentFileNoFlag_ThrowsException()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.11.5
+
+</body>
+</html>

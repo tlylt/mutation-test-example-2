@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>MvArgsParser.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package sg.edu.nus.comp.cs4218.impl.parser;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class MvArgsParser extends ArgsParser {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final static char FLAG_NO_OVERWRITE = &#39;n&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public MvArgsParser() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        legalFlags.add(FLAG_NO_OVERWRITE);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Boolean isNoOverwrite() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_15'>2</a>
+<span>
+1. isNoOverwrite : replaced Boolean return with False for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::isNoOverwrite &rarr; KILLED<br/>
+2. isNoOverwrite : replaced Boolean return with True for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::isNoOverwrite &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return flags.contains(FLAG_NO_OVERWRITE);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;String&#62; getDirectories() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_19'>1</a>
+<span>
+1. getDirectories : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::getDirectories &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return nonFlagArgs;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@5f36c928_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5f36c928_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isNoOverwrite<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoOverwriteFlagOnly_IsNoOverwriteNoDirectory()]</span></span> replaced Boolean return with False for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::isNoOverwrite &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isNoOverwrite<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_EmptyArgument_IsOverwriteNoDirectory()]</span></span> replaced Boolean return with True for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::isNoOverwrite &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@5f36c928_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@5f36c928_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getDirectories<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoFlagAndOneFileAndOneDirectory_IsOverwriteTwoDirectories()]</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/MvArgsParser::getDirectories &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlag2ArgsDestExist_RemoveSrcAndOverrideFile()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqGlobbing_RmFileAMvFileB_RemovesFileAAndMoveFileB()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlagRenameOneSubFileIntoFolder_RenameSubFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagMoveOneAbsolutePathFileIntoSubFolder_MovedIntoSubFolder()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_EmptyArgument_IsOverwriteNoDirectory()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest]/[method:quoteBF_MvFile_RenameFileWithWhitespace()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagMoveOneSubFileIntoSubSFolder_MovedIntoSubFolder()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.system.SystemTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.system.SystemTest]/[method:doubleQuoting_CpFileAToFileABAndMvFileABToFileBC_CopyFileAContentIntoFileBC()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagsSameSrcAndDestExist_ThrowException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_InvalidSrcFileFirst_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqGlobbing_MvFilesRmFileA_MovesFilesAAndRemoveFileA()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_UnwritableDestFileWithFlag_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest]/[method:IORedirSeq_SortInvalidFlagAndRenameFileAToFileC_OutputSortExceptionMsgAndRenameFileAToFileC()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoOverwriteFlagAndOneFile_IsNoOverwriteOneDirectory()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_InvalidSrcFilesAfter_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlagsMoveFilesWithSameNameIntoFolder_MovedIntoFolderWithoutOverriding()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:twoSeqs_CdRmMv_ChangeDirRemoveFileBAndOutputExceptionMsgForMv()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_InvalidNumOfArgs_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_UnwritableDestFileWithoutFlag_ThrowsException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlags2ArgsDiffFileTypesNonExist_ConvertFolderToFile()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlags2ArgsDestFoldersNonExist_RenameFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_NonExistentNonDirDestFile_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqGlobbing_RmFileAMvFileB_OutputExceptionMsgForRmAndMoveFileB()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlags2ArgsDestFileNonExist_RenameFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoFlagAndOneFileAndOneDirectory_IsOverwriteTwoDirectories()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_NonExistentDestFolder_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT]/[method:run_EmptyArg_NullArgsException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:seqGlobbing_MvFilesRmFileA_MovesFilesAAndOutputExceptionMsgForRm()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagMoveOneSubFileIntoFolder_MovedIntoFolder()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlags2ArgsSrcFolderDestFileNonExist_RenameFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagsMoveMultipleFilesIntoFolder_MovedAllIntoFolder()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest]/[method:quoteBF_MvInvalidSrcFile_ThrowsException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT]/[method:run_NoOverwriteFlagExistingSourceExistingDirectorySameName_MoveFileToDirectory()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_ExistentNonDirDestFile_ThrowsException()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoFlagAndThreeFiles_IsOverwriteTwoDirectories()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlagRenameOneSubFileIntoSubFile_RenameSubFile()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationIT]/[method:run_NoFlagExistingSourcesNonExistingDirectory_DestNotDirectoryException()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagsMoveOneFolderIntoFolder_MovedIntoFolder()] (4 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_UnwritableDestFolder_ThrowsException()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_invalidSourceFile_ThrowException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1And2IntegrationTest]/[method:twoSeqs_CdRmMv_ChangeDirRemoveFileBAndRenameFileAToB()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagsMoveFileWithSameNameIntoFolder_MovedIntoFolderWithOverriding()] (25 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagsSameSrcToCurrFolder_ThrowException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithoutFlagMoveOneFileIntoFolder_MovedIntoFolder()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoOverwriteFlagAndTwoFiles_IsNoOverwriteTwoDirectories()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:pastePipeUniqCdMv_validPastePipeUniqCdMv_PasteContentIntoOutputFileAndMoveOutputFileIntoNewDir()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2IntegrationTest]/[method:cdAndMv_CdTestDirAndMoveTextFilesIntoNewTestDir_ChangeDirAndMoveTextFilesIntoNewTestDir()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WithFlag2ArgsDestFileExist_NoChange()] (5 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest]/[method:IORedirSeq_SortFromFileAAndRenameFileAToFileC_ReturnSortedFileAContentAndRenameFileAToFileC()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.app.MvApplicationPublicIT]/[method:run_WnwritableSrcFile_ThrowsException()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.MvArgsParserTest]/[method:parse_NoOverwriteFlagOnly_IsNoOverwriteNoDirectory()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.11.5
+
+</body>
+</html>

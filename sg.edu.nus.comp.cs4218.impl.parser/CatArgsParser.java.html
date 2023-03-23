@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>CatArgsParser.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package sg.edu.nus.comp.cs4218.impl.parser;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class CatArgsParser extends ArgsParser {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final static char LINE_NUMBER_FLAG = &#39;n&#39;;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public CatArgsParser() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        super();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.legalFlags.add(LINE_NUMBER_FLAG);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isPrefixLineNumber() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_14'>2</a>
+<span>
+1. isPrefixLineNumber : replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::isPrefixLineNumber &rarr; KILLED<br/>
+2. isPrefixLineNumber : replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::isPrefixLineNumber &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.flags.contains(LINE_NUMBER_FLAG);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public List&#60;String&#62; getFiles() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_18'>1</a>
+<span>
+1. getFiles : replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::getFiles &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.nonFlagArgs;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1b14ace7_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1b14ace7_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isPrefixLineNumber<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest]/[method:catParserParse_ValidFlags_ReturnsIsPrefixLineNumbers()]</span></span> replaced boolean return with false for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::isPrefixLineNumber &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isPrefixLineNumber<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest]/[method:catParserParse_ValidFlags_ReturnsIsPrefixLineNumbers()]</span></span> replaced boolean return with true for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::isPrefixLineNumber &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1b14ace7_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1b14ace7_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFiles<br/><b>Killed by : </b>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_ThreeValidCalls_ExecutesThreeCalls()]</span></span> replaced return value with Collections.emptyList for sg/edu/nus/comp/cs4218/impl/parser/CatArgsParser::getFiles &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_CallAndInvalidPipe_ExecutesCallAndErrorMessage()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_ThreeValidCalls_ExecutesThreeCalls()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest]/[method:iORedirGlobbing_CatGlobRedirIntoOutputFile_WriteAllTextFilesIntoOutputFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CommandSubstitutionTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CommandSubstitutionTest]/[method:commandSubstitution_EchoFileNameWithCat_ReturnsOutputContentOfFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.BfIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.BfIntegrationTest]/[method:testCatEchoGrep_InvalidInputQuotingWithPiping_ThrowsCatException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_TwoValidCalls_ExecutesBothCalls()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest]/[method:iORedirPipe_CatInputFromFileBPipeToUniq_ReturnUniqContentOfFileB()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_InvalidCallAndInvalidPipe_TwoErrorMessages()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.CommandSubstitutionTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.CommandSubstitutionTest]/[method:commandSubstitution_CatWithEchoFileName_ReturnsOutputContentOfFile()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_InvalidCallAndPipe_ErrorMessageAndExecutePipe()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest]/[method:doubleSeq_CpRmCat_CopyFileAndRemoveOriginalAndCatDuplicate()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.system.SystemTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.system.SystemTest]/[method:doubleQuoting_CpTwoWordedFilesAndCatAllFilesStartingWithWordA_PrintsFileABAndFileAC()] (3 ms)</li><li>sg.edu.nus.comp.cs4218.impl.system.SystemTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.system.SystemTest]/[method:doubleComdSub_EchoComdResults_PrintsCs4218AndFileAContent()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_PipeAndInvalidCall_ExecutesPipeAndErrorMessage()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_PipeAndCall_ExecutesPipeAndCall()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.parser.CatArgsParserTest]/[method:catParserParse_ValidFlags_ReturnsIsPrefixLineNumbers()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF2AndBFIntegrationTest]/[method:iORedirGlobbing_CatGlobNoFileRedirIntoOutputFile_ThrowsException()] (2 ms)</li><li>sg.edu.nus.comp.cs4218.impl.system.SystemTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.system.SystemTest]/[method:doubleGlobbing_LsAndCatAllTextFiles_ListAllTextFilesAndTheirContent()] (6 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_CallAndPipe_ExecutesCallAndPipe()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.EF1AndBFIntegrationTest]/[method:doubleSeq_CpRmInvalidCat_CopyFileAndRemoveOriginalAndOutputCatExceptionMsg()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.cmd.PipeCommandTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.cmd.PipeCommandTest]/[method:pipeCommandRun_PipeWithCatAndEcho_ReturnsOutputContentOfFile()] (0 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_TwoPipeCommands_ExecutesBothPipes()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_InvalidPipeAndCall_ErrorMessageAndExecutesCall()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.BfIntegrationTest.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.BfIntegrationTest]/[method:testWcWithEchoWithPiping_InvalidInput_ReturnsResult()] (1 ms)</li><li>sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT.[engine:junit-jupiter]/[class:sg.edu.nus.comp.cs4218.impl.integration.SequenceCommandIT]/[method:sequenceCommand_InvalidPipeAndInvalidCall_TwoErrorMessages()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.11.5
+
+</body>
+</html>
